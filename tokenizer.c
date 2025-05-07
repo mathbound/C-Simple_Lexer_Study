@@ -1,7 +1,8 @@
 #include "tokenizer.h"
 
-const char *src;
-size_t pos;
+const char *src = NULL;
+size_t pos = 0;
+
 
 void next_token(Token* tok){
     if (isspace((unsigned char)src[pos])) {
